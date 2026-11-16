@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poetry | Engr. Tajdar Shah</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #0f172a; color: #f1f5f9; padding-top: 80px; min-height: 100vh; }
+.header { position: fixed; top: 0; left: 0; width: 100%; height: 70px; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #334155; z-index: 1000; }
+.logo { display: flex; align-items: center; gap: 12px; } .logo img { width: 45px; height: 45px; border-radius: 50%; border: 2px solid #38bdf8; object-fit: cover; }
+.logo span { font-size: 20px; font-weight: 600; } .header nav { display: flex; gap: 8px; }
+.nav-btn { padding: 10px 18px; color: #94a3b8; text-decoration: none; font-size: 14px; border-radius: 8px; transition: 0.3s; }
+.nav-btn:hover { color: #38bdf8; background: rgba(56, 189, 248, 0.1); }
+.menu-toggle { display: none; background: none; border: none; color: #fff; font-size: 24px; }
+
+.poetry-page { padding: 60px 20px; }
+.poetry-container { max-width: 1000px; margin: 0 auto; }
+.page-title { text-align: center; font-size: 36px; margin-bottom: 10px; font-weight: 700; }
+.page-title span { color: #38bdf8; }
+.page-subtitle { text-align: center; color: #94a3b8; font-size: 15px; margin-bottom: 50px; }
+.poetry-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+.poetry-card { background: rgba(30, 41, 59, 0.7); border: 1px solid #334155; border-radius: 16px; padding: 35px 30px; transition: 0.3s; position: relative; text-align: center; }
+.poetry-card:hover { transform: translateY(-5px); border-color: #38bdf8; }
+.poetry-card::before { content: '❝'; position: absolute; top: 10px; left: 20px; font-size: 40px; color: rgba(56, 189, 248, 0.2); font-family: serif; }
+.urdu-text { font-size: 20px; color: #f1f5f9; line-height: 2.2; margin-bottom: 20px; font-family: 'Noto Nastaliq Urdu', serif; }
+.author { font-size: 14px; color: #38bdf8; font-weight: 600; font-style: italic; }
+
+footer { background: #0f172a; border-top: 1px solid #334155; padding: 30px 20px; text-align: center; margin-top: 50px; }
+footer p { color: #94a3b8; font-size: 14px; }
+
+@media (max-width: 768px) { .poetry-grid { grid-template-columns: 1fr; } .urdu-text { font-size: 18px; } .menu-toggle { display: block; } .header nav { display: none; flex-direction: column; position: absolute; top: 70px; width: 100%; background: #0f172a; padding: 20px; } .header nav.active { display: flex; } }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo"><img src="assets/images/logo.jpg" alt="logo"><span>Engr. Tajdar Shah</span></div>
+  <button class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('active')"><i class="fas fa-bars"></i></button>
+  <nav id="navMenu">
+    <a href="index.html" class="nav-btn">Home</a><a href="intro.html" class="nav-btn">About</a><a href="education.html" class="nav-btn">Education</a><a href="skills.html" class="nav-btn">Skills</a><a href="projects.html" class="nav-btn">Projects</a><a href="experience.html" class="nav-btn">Experience</a><a href="hobbies.html" class="nav-btn">Hobbies</a><a href="poetry.html" class="nav-btn">Poetry</a><a href="contact.html" class="nav-btn">Contact</a>
+  </nav>
+</header>
+
+<section class="poetry-page">
+  <div class="poetry-container">
+    <h1 class="page-title">My <span>Poetry</span></h1>
+    <p class="page-subtitle">Expressing thoughts through words</p>
+    <div class="poetry-grid">
+      <div class="poetry-card">
+        <p class="urdu-text">ہم نے دیکھا ہے انہیں بہت غور سے، شاہ جی<br>ان کی صورت پر اُن کی آنکھیں کمال جچتی ہیں</p>
+        <p class="author">— Engr. Tajdar Shah</p>
+      </div>
+      <div class="poetry-card">
+        <p class="urdu-text">مجھ کو لگتا ہے کہ اب نباہ کر لیا جائے<br>شاہ جی! المختصر کہ اب نکاح کر لیا جائے</p>
+        <p class="author">— Engr. Tajdar Shah</p>
+      </div>
+      <div class="poetry-card" style="grid-column: span 2;">
+        <p class="urdu-text">
+          شاہ جی! یہ محبت، یہ دل لگی، یہ چاہتیں<br>
+          سرخ پھول ہوں جیسے دیوارِ قبر پر<br><br>
+          میں سیاہ بخت، کوئی مجھ پر غور کرو<br>
+          اُلجھا ہوا بیٹھا ہوں ایک راہ گزر پر<br><br>
+          نہ چل سکے، نہ مل سکے، ہوئی نہ بات مکمل<br>
+          شاہ! المختصر، ہار گیا وحشت کے کنارے پر
+        </p>
+        <p class="author">— Engr. Tajdar Shah</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><p>© 2026 Engr. Tajdar Haider Syed | PEC Registered Engineer</p></footer>
+</body>
+</html>

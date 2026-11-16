@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Engr. Tajdar Shah</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #0f172a; color: #f1f5f9; padding-top: 80px; min-height: 100vh; }
+.header { position: fixed; top: 0; left: 0; width: 100%; height: 70px; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #334155; z-index: 1000; }
+.logo { display: flex; align-items: center; gap: 12px; } .logo img { width: 45px; height: 45px; border-radius: 50%; border: 2px solid #38bdf8; }
+.logo span { font-size: 20px; font-weight: 600; } .header nav { display: flex; gap: 8px; }
+.nav-btn { padding: 10px 18px; color: #94a3b8; text-decoration: none; font-size: 14px; border-radius: 8px; }
+.nav-btn:hover { color: #38bdf8; background: rgba(56, 189, 248, 0.1); }
+.menu-toggle { display: none; background: none; border: none; color: #fff; font-size: 24px; }
+.intro-page { padding: 60px 20px; display: flex; justify-content: center; align-items: center; }
+.intro-container { max-width: 1000px; width: 100%; background: rgba(30, 41, 59, 0.7); border: 1px solid #334155; border-radius: 20px; padding: 50px; }
+.page-title { text-align: center; font-size: 36px; margin-bottom: 40px; } .page-title span { color: #38bdf8; }
+.intro-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center; }
+.intro-image-section { text-align: center; } .intro-img { width: 220px; height: 220px; border-radius: 50%; border: 4px solid #38bdf8; }
+.intro-badge { display: inline-block; background: rgba(56, 189, 248, 0.15); color: #38bdf8; padding: 8px 16px; border-radius: 50px; font-size: 13px; margin-top: 20px; }
+.intro-text-section h2 { font-size: 28px; margin-bottom: 5px; } .role { font-size: 16px; color: #38bdf8; margin-bottom: 25px; }
+.detail-list { list-style: none; margin-bottom: 30px; } .detail-list li { display: flex; gap: 15px; margin-bottom: 15px; color: #cbd5e1; }
+.detail-list li i { color: #38bdf8; font-size: 18px; margin-top: 3px; }
+.intro-bio { background: #0f172a; padding: 20px; border-radius: 12px; border-left: 4px solid #38bdf8; color: #94a3b8; }
+@media (max-width: 768px) { .intro-grid { grid-template-columns: 1fr; text-align: center; } .detail-list li { flex-direction: column; gap: 5px; } .intro-container { padding: 30px 20px; } .menu-toggle { display: block; } .header nav { display: none; flex-direction: column; position: absolute; top: 70px; width: 100%; background: #0f172a; padding: 20px; } .header nav.active { display: flex; } }
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="logo"><img src="assets/images/logo.jpg"><span>Engr. Tajdar Shah</span></div>
+  <button class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('active')"><i class="fas fa-bars"></i></button>
+  <nav id="navMenu">
+    <a href="index.html" class="nav-btn">Home</a><a href="intro.html" class="nav-btn">About</a><a href="education.html" class="nav-btn">Education</a><a href="skills.html" class="nav-btn">Skills</a><a href="projects.html" class="nav-btn">Projects</a><a href="experience.html" class="nav-btn">Experience</a><a href="hobbies.html" class="nav-btn">Hobbies</a><a href="poetry.html" class="nav-btn">Poetry</a><a href="contact.html" class="nav-btn">Contact</a>
+  </nav>
+</header>
+
+<section class="intro-page">
+  <div class="intro-container">
+    <h1 class="page-title">Who <span>I Am</span></h1>
+    <div class="intro-grid">
+      <div class="intro-image-section">
+        <img src="assets/images/myprofile.jpg" class="intro-img">
+        <br><div class="intro-badge"><i class="fas fa-check-circle"></i> PEC Registered Engineer</div>
+      </div>
+      <div class="intro-text-section">
+        <h2>Engr. Tajdar Haider Syed</h2><p class="role">Computer Systems Engineer</p>
+        <ul class="detail-list">
+          <li><i class="fas fa-user"></i> <div><strong>Name:</strong> Tajdar Haider Syed</div></li>
+          <li><i class="fas fa-male"></i> <div><strong>Father's Name:</strong> Syed Najam Kazmi</div></li>
+          <li><i class="fas fa-graduation-cap"></i> <div><strong>Education:</strong> BSc Computer Systems Engineering at MUST</div></li>
+          <li><i class="fas fa-map-marker-alt"></i> <div><strong>Location:</strong> Mirpur, AJK, Pakistan</div></li>
+        </ul>
+        <div class="intro-bio"><i class="fas fa-quote-left" style="color: #38bdf8; margin-right: 8px;"></i> I am a Computer Systems Engineering student passionate about AI, Networking, and Web Development.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer style="background: #0f172a; border-top: 1px solid #334155; padding: 30px; text-align: center;"><p style="color: #94a3b8; font-size: 14px;">© 2026 Engr. Tajdar Haider Syed</p></footer>
+</body>
+</html>

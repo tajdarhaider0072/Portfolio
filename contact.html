@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Engr. Tajdar Shah</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #0f172a; color: #f1f5f9; padding-top: 80px; min-height: 100vh; }
+.header { position: fixed; top: 0; left: 0; width: 100%; height: 70px; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #334155; z-index: 1000; }
+.logo { display: flex; align-items: center; gap: 12px; } .logo img { width: 45px; height: 45px; border-radius: 50%; border: 2px solid #38bdf8; object-fit: cover; }
+.logo span { font-size: 20px; font-weight: 600; } .header nav { display: flex; gap: 8px; }
+.nav-btn { padding: 10px 18px; color: #94a3b8; text-decoration: none; font-size: 14px; border-radius: 8px; transition: 0.3s; }
+.nav-btn:hover { color: #38bdf8; background: rgba(56, 189, 248, 0.1); }
+.menu-toggle { display: none; background: none; border: none; color: #fff; font-size: 24px; }
+
+.contact-page { padding: 60px 20px; display: flex; justify-content: center; align-items: center; }
+.contact-container { max-width: 1000px; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.contact-card { background: rgba(30, 41, 59, 0.7); border: 1px solid #334155; border-radius: 20px; padding: 40px; }
+.contact-card h2 { font-size: 28px; color: #38bdf8; margin-bottom: 20px; }
+.contact-card p { color: #94a3b8; font-size: 15px; margin-bottom: 30px; line-height: 1.6; }
+.contact-info { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; color: #cbd5e1; font-size: 15px; }
+.contact-info i { width: 40px; height: 40px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+.social-links { display: flex; gap: 15px; margin-top: 30px; }
+.social-links a { width: 45px; height: 45px; background: #0f172a; border: 1px solid #334155; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #94a3b8; font-size: 18px; text-decoration: none; transition: 0.3s; }
+.social-links a:hover { background: #38bdf8; color: #0f172a; transform: translateY(-3px); }
+.contact-form input, .contact-form textarea { width: 100%; padding: 15px; background: #0f172a; border: 1px solid #334155; border-radius: 10px; color: #f1f5f9; font-family: 'Poppins', sans-serif; margin-bottom: 15px; outline: none; }
+.contact-form input:focus, .contact-form textarea:focus { border-color: #38bdf8; }
+.contact-form textarea { height: 120px; resize: vertical; }
+.contact-form button { width: 100%; padding: 15px; background: #38bdf8; color: #0f172a; border: none; border-radius: 10px; font-weight: 600; font-size: 16px; cursor: pointer; transition: 0.3s; }
+.contact-form button:hover { background: #0ea5e9; }
+
+footer { background: #0f172a; border-top: 1px solid #334155; padding: 30px 20px; text-align: center; margin-top: 50px; }
+footer p { color: #94a3b8; font-size: 14px; }
+
+@media (max-width: 768px) { .contact-container { grid-template-columns: 1fr; } .contact-card { padding: 30px 20px; } .menu-toggle { display: block; } .header nav { display: none; flex-direction: column; position: absolute; top: 70px; width: 100%; background: #0f172a; padding: 20px; } .header nav.active { display: flex; } }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo"><img src="assets/images/logo.jpg" alt="logo"><span>Engr. Tajdar Shah</span></div>
+  <button class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('active')"><i class="fas fa-bars"></i></button>
+  <nav id="navMenu">
+    <a href="index.html" class="nav-btn">Home</a><a href="intro.html" class="nav-btn">About</a><a href="education.html" class="nav-btn">Education</a><a href="skills.html" class="nav-btn">Skills</a><a href="projects.html" class="nav-btn">Projects</a><a href="experience.html" class="nav-btn">Experience</a><a href="hobbies.html" class="nav-btn">Hobbies</a><a href="poetry.html" class="nav-btn">Poetry</a><a href="contact.html" class="nav-btn">Contact</a>
+  </nav>
+</header>
+
+<section class="contact-page">
+  <div class="contact-container">
+    <div class="contact-card">
+      <h2>Let's Connect</h2>
+      <p>I am currently looking for opportunities in Networking and Web Development. Feel free to reach out!</p>
+      <div class="contact-info"><i class="fas fa-envelope"></i><span>sthaks.1272@gmail.com</span></div>
+      <div class="contact-info"><i class="fas fa-phone"></i><span>+92 355 6651014</span></div>
+      <div class="contact-info"><i class="fas fa-map-marker-alt"></i><span>Mirpur, AJK, Pakistan</span></div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="contact-card">
+      <h2>Send a Message</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message..." required></textarea>
+        <button type="button">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer><p>© 2026 Engr. Tajdar Haider Syed | PEC Registered Engineer</p></footer>
+</body>
+</html>
